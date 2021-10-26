@@ -1,6 +1,6 @@
-import 'package:bitso/home.dart';
+import 'package:bitso/screen/homepage.dart';
+import 'package:bitso/screen/loginpage.dart';
 import 'package:flutter/material.dart';
-
 void main() {
   runApp(bitso());
 }
@@ -12,7 +12,17 @@ class bitso extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: home(),
+   //   home: homepage(),
+      themeMode: ThemeMode.light,
+      theme: ThemeData(
+        primarySwatch: Colors.deepOrange,
+        brightness: Brightness.light,
+      ),
+      initialRoute: "/home",
+      routes: {
+        "/":(context)=>loginpage(),
+        "/home":(context)=>homepage(),
+      }
     );
   }
 }

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class home extends StatelessWidget {
-  const home({Key? key}) : super(key: key);
+class homepage extends StatelessWidget {
+  const homepage({Key? key}) : super(key: key);
   final int days = 30;
   final String s = "Ramu";
   @override
@@ -12,7 +12,7 @@ class home extends StatelessWidget {
       ),
       body: Center(
         child: Container(
-          child: Text("lodddddddd $days and $s"),
+          child: Text("lodddfdfsDFsd $days and $s"),
         ),
       ),
     );
